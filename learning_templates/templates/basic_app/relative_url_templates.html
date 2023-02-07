@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+	<a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a> <!-- despues de url, va el app_name que se puso en la urls del app y el nombre que se usó como atributo en path, en este caso:  path('other/', views.other, name="other") el name debe ir despues de los dos puntos.-->
+	<a href="{% url 'admin:index'  %}">LINK TO ADMIN</a>
+	<a href="{% url 'index'  %}">LINK TO INDEX</a>
+</body>
+</html>
